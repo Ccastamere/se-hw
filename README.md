@@ -15,7 +15,8 @@
   Git workflow still uses the central repository as the interactive center for all developers. Like other workflows, developers work locally and push branches into the central repository.
 ### Historical branches
   Compared with using only one master branch, Git workflow uses two branches to record the history of the project. The master branch stores the history of the formal publication, while the develop branch serves as an integrated branch of functionality. This makes it convenient for all submissions on the master branch to assign a version number. 
->(https://github.com/xirong/my-git/blob/master/images/git-workflow-release-cycle-1historical.png)
+![picture]
+(https://github.com/xirong/my-git/blob/master/images/git-workflow-release-cycle-1historical.png)
 ### Functional branches
   Each new function is located in one of its own branches, so that it can be pushed to the central repository to backup and collaborate. But the functional branch does not pull out a new branch from the master branch, but uses the develop branch as the parent branch. When the new function is completed, merge back to the develop branch. New function submission should never interact directly with the master branch. 
 ### Release branches
